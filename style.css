@@ -1,11 +1,11 @@
 * {
     margin: 0%;
-    border: solid 1px red;
+    box-sizing: border-box;
     font-family: "Epilogue", sans-serif;
 }
 
 .noir {
-    background: rgb(37, 36, 36);
+    background: rgb(45, 45, 45);
     color: white;
 }
 
@@ -38,9 +38,20 @@
 
 .card {
     display: flex;
+    padding: 40px 10px;
     gap: 30px;
     flex-direction: column;
+    justify-content: space-between;
     max-width: 270px;
+
+    H3 {
+        font-size: 18;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 15px;
+    }
 }
 
 .card_service {
@@ -54,23 +65,15 @@
     display: flex;
 
     .profil {
-        width: 30%;
+        width: 60px;
+        height: 60px;
         border-radius: 100%;
         overflow: hidden;
     }
 }
 
-.stars {
-    display: flex;
-}
-
-.colend {
-    display: flex;
-    flex-direction: column;
-}
-
 header {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 
     nav {
         a {
@@ -83,15 +86,24 @@ header {
         h2 {
             font-size: 17px;
             line-height: 26px;
+            padding: 10px;
         }
 
         h1 {
             font-size: 60px;
-            font-weight: 400;
+            font-weight: 700;
+            padding: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 200;
+            padding: 10px;
         }
 
         a {
             display: inline-block;
+            margin-top: 20px;
             padding: 20px 40px;
             color: black;
             text-decoration: none;
@@ -106,6 +118,8 @@ header {
     h2 {
         padding-block: 30px;
         text-align: center;
+        font-size: 28px;
+        font-weight: 600;
     }
 }
 
@@ -133,9 +147,49 @@ header {
 
     H2 {
         padding-block: 30px;
+        text-align: center;
     }
 
     .card {
         background-color: rgb(244, 240, 240);
+    }
+}
+
+footer {
+    padding: 50px;
+
+    h2 {
+        width: 1000px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #foot_gauche {
+        max-width: 400px;
+
+        I {
+            padding: 20px;
+        }
+    }
+
+    #foot_droit {
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input {
+                padding: 10px;
+                width: 300px;
+            }
+        }
+
+        button {
+            color: #252424;
+            background-color: white;
+            padding: 15px 70px;
+            margin-top: 10px;
+        }
     }
 }
